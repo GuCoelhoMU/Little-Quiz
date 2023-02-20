@@ -14,7 +14,7 @@ h1,h2,h3,h4{
 }
 h1{
     font-size: 5.4rem;
-    color: #eb5656;
+    color: #e05c5c;
     margin-bottom: 5rem;
 }
 h1 > span {
@@ -39,6 +39,7 @@ h3{
    justify-content: center;
    max-width: 80rem;
    margin: 0 auto;
+   padding: 2rem;
 }
 .cc > * {
     width: 100%;
@@ -66,15 +67,17 @@ h3{
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #eb5656;
+    border: 0.1rem solid #e05c5c;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #eb5656;
+    color: #e05c5c;
     background-color: white;
 }
 .btn:hover{
     cursor:pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(235, 86, 86, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
 }
 .btn[disabled]:hover{
     cursor: not-allowed;
