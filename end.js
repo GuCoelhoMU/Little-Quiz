@@ -4,13 +4,27 @@ const finalScore = document.getElementById("finalScore");
 const pontuacaoMaisRecente = localStorage.getItem("pontuacaoMaisRecente");
 finalScore.innerText = pontuacaoMaisRecente;
 
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-username.addEventListener("keyup", () =>{
+const MAX_HIGH = 5;
+finalScore.innerText = pontuacaoMaisRecente;
+
+username.addEventListener("keyup", () => {
     console.log(username.value);
     saveScoreBtn.disabled = !username.value;
 });
-
 saveHighScore = e => {
     console.log("Clicou em Salvar!");
     e.preventDefault();
+
+    const score = {
+        score: Math.floor(Math.random() * 100),
+        name: username.value
+    };
+    highScores.push(score);
+    highScores.sort((a, b) => b.score - a.score);
+    highScores.splice(5);
+
+    localStorage.setItem("highScores", JSON.stringify(highScores));
+    window.location.assign("/");
 };
