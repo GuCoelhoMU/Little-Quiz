@@ -50,6 +50,7 @@ startGame = () => {
 
 getNewQuestion = () =>{
     if(availableQuestions.length === 0 | questionCounter>= MAXQ ){
+        localStorage.setItem("pontuacaoMaisRecente", score)
         return window.location.assign("/end.html");//quando terminar as perguntas, irá retornar ao menu :)
     }
     
