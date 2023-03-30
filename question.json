@@ -1,0 +1,26 @@
+[
+    {
+      "question": "Quem é o atual presidente dos Estados Unidos?",
+      "choice1": "Lula",
+      "choice2": "Luffy",
+      "choice3": "Biden",
+      "choice4": "Manoel Gomes",
+      "answer": 3
+    },
+    {
+      "question": "Em que ano foi lançado o Playstation 4?",
+      "choice1": "2013",
+      "choice2": "1988",
+      "choice3": "2014",
+      "choice4": "2011",
+      "answer": 1
+    },
+    {
+      "question": "Quem é o atual maior pontuador de todos os tempos da NBA?",
+      "choice1": "Michael Jordan",
+      "choice2": "Lionel Messi",
+      "choice3": "Rafael Lange",
+      "choice4": "Lebron James",
+      "answer": 4
+    }
+  ]
